@@ -5,6 +5,8 @@ services:
     image: mongo:4.4.6
   basketdb:
     image: redis:alpine
+  discountdb:
+    image: postgres
   portainer:
     image: portainer/portainer-ce
   catalogapi:
@@ -21,3 +23,4 @@ services:
 volumes:
   mongo_data: 
   portainer_data: 
+  postgres_data: 
